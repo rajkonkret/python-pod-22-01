@@ -1,0 +1,118 @@
+-----------------------
+rajkonkret660@gmail.com
+https://play.google.com/store/apps/details?id=pl.rajkonkret.testjava2&hl=pl&gl=US
+
+-----------------------
+------------------------
+
+
+==    Equal to
+!=    Not equal to
+<    Less than
+>    Greater Than
+<=    Less than or Equal to
+>=    Greater than or Equal to
+
+
+**    Exponent    2 ** 3 = 8
+%    Modulus/Remainder    22 % 8 = 6
+//    Integer division    22 // 8 = 2
+/    Division    22 / 8 = 2.75
+*    Multiplication    3 * 3 = 9
+-    Subtraction    5 - 2 = 3
++    Addition    2 + 2 = 4
+
+%d: formatowanie liczb całkowitych
+%f: formatowanie liczb zmiennoprzecinkowych
+%e lub %E: formatowanie liczb w notacji naukowej
+%x lub %X: formatowanie liczb w formacie szesnastkowym
+%o: formatowanie liczb w formacie ósemkowym
+%c: formatowanie pojedynczych znaków
+
+%s - łańcuch znaków (string)
+%r - reprezentacja obiektu (repr)
+%d - liczba całkowita (integer)
+%i - liczba całkowita (integer)
+%o - liczba w formacie ósemkowym (octal)
+%u - liczba całkowita bez znaku (unsigned decimal)
+%x - liczba w formacie szesnastkowym (hexadecimal)
+%X - liczba w formacie szesnastkowym (hexadecimal) z wielkimi literami
+%e - liczba w notacji naukowej (exponential)
+%E - liczba w notacji naukowej (exponential) z wielkimi literami
+%f - liczba zmiennoprzecinkowa (float)
+%F - liczba zmiennoprzecinkowa (float)
+%g - liczba zmiennoprzecinkowa (float) w formacie kompaktowym
+%G - liczba zmiennoprzecinkowa (float) w formacie kompaktowym z wielkimi literami
+%c - pojedynczy znak (character)
+%p - adres pamięci obiektu
+%% - znak % (percent)
+
+\n - Nowa linia
+\r - Powrót karetki
+\t - Tabulacja pozioma
+\b - Powrót kursora (usuwa poprzedni znak)
+\f - Przesunięcie strony
+\v - Tabulacja pionowa
+' - Apostrof (literał apostrofu)
+" - Cudzysłów (literał cudzysłowu)
+\a - Dźwięk systemowy lub sygnał alarmowy
+\ooo - Znak o wartości oktalnej (np. \012 reprezentuje znak nowej linii)
+\xhh - Znak o wartości szesnastkowej (np. \x0A reprezentuje znak nowej linii)
+\uXXXX - Znak Unicode o wartości czteroznakowego kodu szesnastkowego
+\UXXXXXXXX - Znak Unicode o wartości ośmioznakowego kodu szesnastkowego
+\N{name} - Znak Unicode o podanej nazwie
+The and Operator’s Truth Table:
+
+\033[31m: Set text color to red
+\033[32m: Set text color to green
+\033[33m: Set text color to yellow
+\033[34m: Set text color to blue
+\033[35m: Set text color to magenta
+\033[36m: Set text color to cyan
+\033[37m: Set text color to white
+\033[0m: Reset text color to default
+\033[1m: Set text style to bold
+\033[4m: Set text style to underline
+print("\033[31mHello\033[0m") - kolorki
+
+
+Expression    Evaluates to
+True and True    True
+True and False    False
+False and True    False
+False and False    False
+The or Operator’s Truth Table:
+
+Expression    Evaluates to
+True or True    True
+True or False    True
+False or True    True
+False or False    False
+The not Operator’s Truth Table:
+
+Expression    Evaluates to
+not True    False
+not False
+
+Dla daty:
+%Y: Rok z pełną liczbą cyfr, np. "1989", "2023".
+%y: Rok z dwiema ostatnimi cyframi, np. "89", "23".
+%m: Miesiąc z zerem wiodącym, np. "01" do "12".
+%d: Dzień miesiąca z zerem wiodącym, np. "01" do "31".
+%B: Pełna nazwa miesiąca, np. "January", "December".
+%b: Skrócona nazwa miesiąca, np. "Jan", "Dec".
+%A: Pełna nazwa dnia tygodnia, np. "Monday", "Sunday".
+%a: Skrócona nazwa dnia tygodnia, np. "Mon", "Sun".
+Dla czasu:
+%H: Godzina w formacie 24-godzinnym z zerem wiodącym, np. "00" do "23".
+%I: Godzina w formacie 12-godzinnym z zerem wiodącym, np. "01" do "12".
+%p: AM/PM.
+%M: Minuty z zerem wiodącym, np. "00" do "59".
+%S: Sekundy z zerem wiodącym, np. "00" do "59".
+%f: Mikrosekundy, np. "000000" do "999999".
+
+spam += 1    spam = spam + 1
+spam -= 1    spam = spam - 1
+spam *= 1    spam = spam * 1
+spam /= 1    spam = spam / 1
+spam %= 1    spam = spam % 1
