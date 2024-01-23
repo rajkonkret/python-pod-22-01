@@ -40,3 +40,43 @@ print(f"Rabat wynosi {rabacik}")
 rabat = 25 if suma_zam > 100 else 0
 print(f"Rabat wynosi {rabat}")
 
+# zasymulejemy system zbierania logow
+# zmienne ktore symuluja dane z innego systemu
+# na podstawie tych danych bedziemy wykonywac rózne działania
+# email, console, dowolny inny
+# alert z consosli wydrukujemy gotowy komunikat
+# Stało się coś strasznego
+# zapiszemy kounikat do listy i wypiszemy liste, komunikaty moga miec rozne statusy error, medium. inny
+
+alert_system = 'console'
+error = 'medium'
+
+error_message = "Stało się coś strasznego"
+
+lista_bledow = []
+if alert_system == 'console':
+    print(error_message)
+elif alert_system == 'email':
+    print("Alert z systemu email")
+    if error == 'error':
+        lista_bledow.append("bład")
+    elif error == 'medium':
+        lista_bledow.append("średnie")
+    else:
+        lista_bledow.append("inny")
+else:
+    print("Nie znam takiego systemu")
+
+print(lista_bledow)
+
+# napisac test z ...
+# zadac pytanie
+# pobrac odpowiedz
+# sprawdzic czy prawidłowa
+# wyswietlic wynik
+
+odp = input("Podaj datę chrztu Polski")
+if odp == '966':
+    print("Prawidłowa data")
+else:
+    print("Nieprawidłowa data")
