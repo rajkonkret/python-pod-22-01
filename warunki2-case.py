@@ -12,6 +12,8 @@ match lang.lower().replace(" ", ""):
         lista.append("Java")
     case "c++":
         lista.append("C++")
+    case "1" | "2" | "3" | "4" | "5" | "6":
+        lista.append(lang)
     case _:  # wartosc domyslna
         print("Nie znaleziono język programowania")
 
