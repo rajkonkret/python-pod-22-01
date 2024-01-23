@@ -89,7 +89,7 @@ for i, p in enumerate(imiona, start=1):
     print(i, p)  # 1 Radek
 
 # ludzie = ['Radek', 'Janek', 'Asia', 'Tadek']
-ludzie = ['Radek', 'Janek', 'Asia', 'Tadek', 'Marek'] # przy for IndexError: list index out of range
+ludzie = ['Radek', 'Janek', 'Asia', 'Tadek', 'Marek']  # przy for IndexError: list index out of range
 
 wiek = [44, 55, 23, 32]
 # wyswietlic w postaci Radek 44
@@ -121,3 +121,25 @@ for i, (p, w) in enumerate(zip(ludzie, wiek)):
 # 1 Janek 55
 # 2 Asia 23
 # 3 Tadek 32
+
+zipped = zip_longest(ludzie, wiek, fillvalue=None)
+print(zipped)  # <itertools.zip_longest object at 0x0000019E03380AE0>
+# for zipp in zipped:
+#     print(zipp)
+# poniewaz zipped jest typu iterator musimy zapamietac sobie elemnty w innej kolekcji by móc używac wielokrotnie
+zip_list = list(zipped)
+for item in zip_list:
+    print(item)
+# ('Radek', 44)
+# ('Janek', 55)
+# ('Asia', 23)
+# ('Tadek', 32)
+# ('Marek', None)
+print("-------------")
+# for zipp in zipped:
+#     print(zipp)
+for item in zip_list:
+    print(item)  # ('Radek', 44)
+
+for i, w in zip_list:
+    print(i, w)  # Marek None
