@@ -30,7 +30,8 @@ with open("test.log", "a", encoding='utf-8') as fh:
     fh.write("Dodane\n")
     fh.write("Dodane\n")
     fh.write("Dodane\n")
-    fh.write("Dośdane\n")
+    fh.write("Dodane\n")
+    fh.write("Doącńśdane\n")
 
 with  open("test.log", "r", encoding='utf-8') as file:
     lines = file.read()
