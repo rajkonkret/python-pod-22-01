@@ -8,7 +8,6 @@ for root, dirs, files in os.walk("../python-pod-22-01"):
             file_path = os.path.join(root, file)
             print(file_path)
 
-
 for root, dirs, files in os.walk(".."):
     abs_root = os.path.abspath(root)
     # print(abs_root)
