@@ -15,3 +15,4 @@ print(type(rates))
 rate = rates[0]
 print(type(rate))  # <class 'dict'>
 print(rate['mid'])  # 4.0393
+# pydantic
