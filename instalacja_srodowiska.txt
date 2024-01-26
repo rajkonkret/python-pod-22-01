@@ -1,0 +1,2 @@
+PS C:\Users\CSComarch\PycharmProjects\python-pod-22-01> pip freeze > requirements.txt
+PS C:\Users\CSComarch\PycharmProjects\python-pod-22-01> pip install .\requirements.txt
