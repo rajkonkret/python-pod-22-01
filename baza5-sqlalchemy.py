@@ -15,14 +15,15 @@ class User(Base):
         return f"<User(name={self.name}, age={self.age})>"
 
 
-engine = create_engine('sqlite:///mydatabase.db')
+# echo=True logi z bazy
+engine = create_engine('sqlite:///mydatabase.db', echo=True)
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
 session = Session()
 
 new_user = User(name='Jan kowalski', age=30)
-session.add(new_user)
+session.add(new_user)  # INSERT INTO users (name, age) VALUES (?, ?)
 session.commit()
 session.close()
 
